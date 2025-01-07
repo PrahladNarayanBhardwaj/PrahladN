@@ -38,3 +38,7 @@ body {
     margin-top: 20px;        /* Add some space above the image */
     margin-bottom: 20px;     /* Add some space below the image */
 }
+body {
+    background-color: #f4f4f4; /* Light grey background */
+    font-family: 'Roboto', sans-serif; /* Ensure you have a nice font */
+}
