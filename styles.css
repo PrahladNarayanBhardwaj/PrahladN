@@ -280,4 +280,20 @@ html {
     background-color: #e0f7fa;
     transition: background-color 0.3s ease;
 }
+/* Header Styles */
+header {
+    background-color: #d3d3d3; /* Light grey */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #d3d3d3; /* Light grey */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
