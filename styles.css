@@ -161,3 +161,76 @@ footer {
     font-size: 1.2em;
 }
 
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #0073e6;
+    border-radius: 5px;
+}
+
+/* Full-Height Section */
+.section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Different background colors for each section */
+#home { background-color: #f0f0f0; }
+#about { background-color: #e0e0e0; }
+#projects { background-color: #d0d0d0; }
+#contact { background-color: #c0c0c0; }
+
+/* Show section when it enters the viewport */
+.section.visible {
+    opacity: 1;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
