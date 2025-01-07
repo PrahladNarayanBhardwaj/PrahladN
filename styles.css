@@ -107,4 +107,35 @@ footer {
     width: 100%;
     bottom: 0;
 }
+.experience {
+    padding: 50px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.experience h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.job {
+    margin-bottom: 40px;
+}
+
+.job h3 {
+    font-size: 1.8em;
+}
+
+.job p {
+    font-size: 1.2em;
+}
+
+.job ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.job ul li {
+    font-size: 1.1em;
+}
 
