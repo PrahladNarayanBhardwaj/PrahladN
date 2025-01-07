@@ -69,3 +69,15 @@ nav ul li a:hover {
     background-color: #005bb5;
     border-radius: 5px;
 }
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;  /* Stack the nav items vertically */
+        text-align: center;
+    }
+
+    .headshot {
+        width: 100px;  /* Make the image smaller on mobile */
+        height: 100px;
+    }
+}
+
