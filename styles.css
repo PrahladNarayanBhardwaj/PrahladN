@@ -296,4 +296,67 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* About Section Styles */
+#about {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Fade-in animation */
+}
+
+/* About Container */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* About Text */
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    color: #0073e6;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Fade-In Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle Hover Effect for Text */
+.about-text h3:hover {
+    color: #005bb5;
+    transition: color 0.3s ease;
+}
 
