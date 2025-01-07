@@ -67,3 +67,29 @@
     <p>Feel free to reach out!</p>
     <!-- Add your Contact content here -->
 </section>
+<!-- Your other HTML content here -->
+
+<!-- Add the JavaScript at the bottom -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.section');
+
+    function handleScroll() {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                section.classList.add('visible');
+            } else {
+                section.classList.remove('visible');
+            }
+        });
+    }
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+});
+</script>
+
+</body>
+
+    
