@@ -1,9 +1,0 @@
-/ (root folder)
-│
-├── index.html
-├── styles.css
-├── pages/
-│   ├── about.html
-│   ├── projects.html
-│   └── contact.html
-└── images/
