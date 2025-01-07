@@ -38,9 +38,13 @@
 
 <!-- Home Section -->
 <section id="home" class="section">
-    <h1>Welcome to My Website</h1>
-    <p>This is the home section.</p>
-    <!-- You can add your existing home content here -->
+    <div class="home-container">
+        <img src="images/Headshot.jpg" alt="Prahlad Narayan Bhardwaj" class="Headshot">
+        <div class="home-text">
+            <h1>Hi, I'm Prahlad Narayan Bhardwaj</h1>
+            <p>Welcome to my personal website! I'm a data analyst specializing in business analytics and process improvement. Here, you can learn more about my work, projects, and how to get in touch with me.</p>
+        </div>
+    </div>
 </section>
 
 <!-- About Me Section -->
@@ -87,15 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 </body>
-<section id="home" class="section">
-    <div class="home-container">
-        <img src="images/Headshot.jpg" alt="Prahlad Narayan Bhardwaj" class="Headshot">
-        <div class="home-text">
-            <h1>Hi, I'm Prahlad Narayan Bhardwaj</h1>
-            <p>Welcome to my personal website! I'm a data analyst specializing in business analytics and process improvement. Here, you can learn more about my work, projects, and how to get in touch with me.</p>
-        </div>
-    </div>
-</section>
+
 <script>
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
