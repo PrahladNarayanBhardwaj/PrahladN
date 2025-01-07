@@ -138,4 +138,26 @@ footer {
 .job ul li {
     font-size: 1.1em;
 }
+.projects {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 1.8em;
+}
+
+.project p {
+    font-size: 1.2em;
+}
 
