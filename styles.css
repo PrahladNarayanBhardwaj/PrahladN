@@ -30,3 +30,11 @@ nav ul li a:hover {
 body {
     font-family: 'Roboto', sans-serif;
 }
+.Headshot {
+    width: 150px;            /* Set the width of the image */
+    height: 150px;           /* Set the height of the image */
+    border-radius: 50%;      /* Make the image round */
+    object-fit: cover;       /* Ensure the image fills the space without distortion */
+    margin-top: 20px;        /* Add some space above the image */
+    margin-bottom: 20px;     /* Add some space below the image */
+}
