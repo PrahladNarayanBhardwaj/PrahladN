@@ -80,4 +80,13 @@ nav ul li a:hover {
         height: 100px;
     }
 }
+footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 
