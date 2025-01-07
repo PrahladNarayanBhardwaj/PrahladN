@@ -42,3 +42,30 @@ body {
     background-color: #f4f4f4; /* Light grey background */
     font-family: 'Roboto', sans-serif; /* Ensure you have a nice font */
 }
+nav {
+    background-color: #0073e6; /* Blue background for the nav bar */
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #005bb5;
+    border-radius: 5px;
+}
