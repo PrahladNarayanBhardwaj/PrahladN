@@ -234,3 +234,50 @@ nav ul li a:hover {
 html {
     scroll-behavior: smooth;
 }
+/* Styling the Home section */
+#home {
+    background-color: #f0f8ff; /* Soft background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 4px solid #0073e6; /* Border around the image */
+}
+
+.home-text {
+    max-width: 600px;
+}
+
+.home-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Add a hover effect for the home section */
+#home:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease;
+}
+
