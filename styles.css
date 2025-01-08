@@ -56,6 +56,20 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
+    background-image: url('images/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Adjust text color for contrast */
+    text-align: center;
+    padding: 60px 20px;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero {
     background-color: #d3d3d3;
     color: white;
     text-align: center;
