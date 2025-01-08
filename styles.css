@@ -277,16 +277,11 @@ h2 {
 }
 
 footer {
-    background-color: #d3d3d3; /* Light grey */
+    background-color: #d3d3d3;
     color: black;
     text-align: center;
     padding: 20px;
-    height: auto; /* Let the height adjust dynamically */
     width: 100%;
-}
-
-#contact {
-    margin-bottom: 80px; /* Add a margin to prevent overlap */
 }
 
 /* Responsive Design */
