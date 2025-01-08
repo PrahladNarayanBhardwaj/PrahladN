@@ -1,282 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url('./images/background.jpg'); /* Update with the actual image name */
+  background-size: cover;
+  background-position: center;
+  color: #333;
+}
 
-        h1, h2, h3 {
-            color: #333;
-        }
+/* Header Styling */
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  padding: 20px 10%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
 
-        a {
-            text-decoration: none;
-        }
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
 
-        /* Navigation Bar */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px 0;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            animation: slideDown 1s ease-out;
-        }
+header p {
+  font-size: 1.2em;
+}
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        }
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 10px 0;
+}
 
-        nav ul li {
-            margin: 0 15px;
-        }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+}
 
-        nav ul li a {
-            color: #fff;
-            font-size: 1.1rem;
-            font-weight: bold;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: all 0.3s ease-in-out;
-        }
+nav a:hover {
+  color: #ff7f50; /* Coral color for hover effect */
+}
 
-        nav ul li a:hover {
-            background-color: #555;
-            transform: scale(1.1);
-        }
+/* Section Styling */
+section {
+  padding: 50px 10%;
+}
 
-        /* Header Section */
-        header {
-            background-color: #d3d3d3;
-            text-align: center;
-            padding: 20px;
-        }
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #444;
+  border-bottom: 2px solid #ff7f50;
+  display: inline-block;
+}
 
-        .hero {
-            background-image: url('images/background2.jpg');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            padding: 100px 20px;
-            color: white;
-        }
+/* About Section */
+#about {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 10%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-        .hero h1 {
-            font-size: 3em;
-            font-weight: bold;
-        }
+#about p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #555;
+}
 
-        .hero p {
-            font-size: 1.5em;
-        }
+/* Projects Section */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
 
-        /* Home Section */
-        #home {
-            background-color: #f0f8ff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 50px 20px;
-        }
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-        .home-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 1200px;
-            flex-wrap: wrap;
-        }
+.project-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #222;
+}
 
-        .headshot {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-right: 30px;
-            border: 4px solid #0073e6;
-        }
+.project-card p {
+  font-size: 1em;
+  line-height: 1.6;
+}
 
-        .home-text {
-            max-width: 600px;
-        }
+/* Contact Section */
+#contact {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 30px 10%;
+  text-align: center;
+  border-radius: 10px;
+}
 
-        .home-text h1 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 10px;
-        }
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-        .home-text p {
-            font-size: 1.2rem;
-            color: #666;
-            line-height: 1.6;
-        }
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
 
-        #home:hover {
-            background-color: #e0f7fa;
-            transition: background-color 0.3s ease;
-        }
+#contact input[type="submit"] {
+  background-color: #ff7f50;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  border: none;
+}
 
-        /* About Section */
-        #about {
-            background-color: #f9f9f9;
-            padding: 80px 20px;
-            text-align: center;
-            animation: fadeInUp 1s ease-out;
-        }
+#contact input[type="submit"]:hover {
+  background-color: #ff4500;
+}
 
-        .about-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  position: relative;
+}
 
-        .about-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-        }
+footer p {
+  font-size: 0.9em;
+}
 
-        .about-text p {
-            font-size: 1.2rem;
-            color: #666;
-            line-height: 1.8;
-            margin-bottom: 25px;
-        }
+footer a {
+  color: #ff7f50;
+  text-decoration: none;
+}
 
-        /* Projects Section */
-        #projects {
-            background-color: #f9f9f9;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .projects-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .project-card {
-            background-color: #fff;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0073e6;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Media Queries */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .headshot {
-                width: 100px;
-                height: 100px;
-            }
-        }
-
-        /* Animations */
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-            }
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-
-    <section id="home">
-        <div class="home-container">
-            <img src="images/headshot.jpg" alt="Headshot" class="headshot">
-            <div class="home-text">
-                <h1>Hello, I'm [Your Name]</h1>
-                <p>Welcome to my professional website where I share my journey, projects, and skills.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="about-container">
-            <h2>About Me</h2>
-            <p>I am a dedicated professional with expertise in [Your Field].</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="projects-container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of the project.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+footer a:hover {
+  text-decoration: underline;
+}
