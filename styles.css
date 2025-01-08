@@ -294,14 +294,9 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .project-card, .education-card, .activity-card, .info-card {
-        margin: 10px auto;
-        padding: 15px;
+@media (max-width: 768px) {
+    nav, footer {
+        display: none; /* Hide the navigation bar and footer */
     }
 }
