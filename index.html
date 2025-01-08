@@ -1,211 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prahlad Narayan Bhardwaj - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Prahlad Narayan Bhardwaj | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('background-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5rem;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 10px 0;
+        }
+        h2 {
+            color: #333;
+        }
+        .about, .education, .projects, .activities, .credentials, .contact {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .skills ul, .projects ul, .activities ul, .credentials ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li, .projects li, .activities li, .credentials li {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Hi, I'm Prahlad Narayan Bhardwaj</h1>
+        <p>Master of Science in Business Analytics | Data Analyst | Process Improvement Specialist</p>
+    </header>
 
-<header class="hero">
-    <h1>Hi, I'm Prahlad Narayan Bhardwaj (Rayan)</h1>
-    <p>Master of Science in Business Analytics | Data Analyst | Process Improvement Specialist</p>
-</header>
-    
-<footer>
-    <p>© 2025 Prahlad Narayan Bhardwaj. All rights reserved.</p>
-</footer>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#activities">Professional Activities</a>
+        <a href="#credentials">Credentials & Learning</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Prahlad Narayan Bhardwaj (Rayan), a Master of Science student in Business Analytics at Simon Business School, University of Rochester. I specialize in data analysis, business strategy, process improvement, and machine learning. My passion lies in transforming data into actionable insights and solving complex business challenges.</p>
+        <p>My journey in analytics began with a Bachelor’s degree in Business Administration from the University of Kerala, India. I have honed my skills through professional experience and personal projects. I’ve worked with cross-functional teams to enhance customer service, optimize business processes, and provide valuable insights using advanced analytics.</p>
+    </section>
 
-<!-- Navigation Bar -->
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#professional-activities">Professional Activities</a></li>
-        <li><a href="#credentials">Credentials & Learning</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Employee Data Analysis (Nexus Logistics Solutions)</strong><br>
+                <em>Technologies Used:</em> PCA, K-means Clustering, Python (Pandas, Scikit-learn)<br>
+                <p>Analyzed 5000+ employee data to segment motivations, preferences, and performance trends. Provided actionable insights to optimize training programs and boost engagement.</p>
+            </li>
+            <li>
+                <strong>Product Development & Strategy Realignment (Tribola Tech)</strong><br>
+                <em>Technologies Used:</em> Market Gap Analysis, Data Visualization, Python (Pandas)<br>
+                <p>Identified and analyzed market gaps, supporting product team decision-making and ensuring alignment with business objectives. Simplified project deliverables to drive revenue growth.</p>
+            </li>
+        </ul>
+    </section>
 
-<!-- Home Section -->
-<section id="home" class="section">
-    <div class="home-container">
-        <img src="images/Headshot.jpg" alt="Prahlad Narayan Bhardwaj" class="Headshot">
-        <div class="home-text">
-            <h1>Hi, I'm Prahlad Narayan Bhardwaj</h1>
-            <p>Welcome to my personal website! I'm a data analyst specializing in business analytics and process improvement. Here, you can learn more about my work, projects, and how to get in touch with me.</p>
-        </div>
-    </div>
-</section>
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Master of Science in Business Analytics</strong><br>
+                Simon Business School, University of Rochester<br>
+                <em>Expected Graduation:</em> December 2025<br>
+                <em>Relevant Coursework:</em> Advanced Business Analytics, Process Improvement, Business Strategy, Core Statistics, Supply Chain<br>
+                <em>Location:</em> Rochester, New York
+            </li>
+            <li>
+                <strong>Bachelor of Business Administration</strong><br>
+                University of Kerala<br>
+                <em>Graduation Date:</em> March 2021<br>
+                <em>Location:</em> Trivandrum, India
+            </li>
+        </ul>
+    </section>
 
-<!-- About Me Section -->
-<section id="about" class="section">
-    <div class="about-container">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>Hello! I'm <strong>Prahlad Narayan Bhardwaj (Rayan)</strong>, a Master of Science student in Business Analytics at Simon Business School, University of Rochester. I specialize in data analysis, business strategy, process improvement, and machine learning. My passion lies in transforming data into actionable insights and solving complex business challenges.</p>
-            <p>My journey in analytics began with a Bachelor’s degree in Business Administration from the University of Kerala, India. I have honed my skills through professional experience and personal projects. I’ve worked with cross-functional teams to enhance customer service, optimize business processes, and provide valuable insights using advanced analytics.</p>
-            
-            <h3>Technical Skills</h3>
-            <ul>
-                <li><strong>Languages/Tools:</strong> Python (Pandas, NumPy, Scipy, PySpark), R, SQL, Tableau, PowerBI</li>
-                <li><strong>Machine Learning & Analytics:</strong> Regression, clustering, PCA, Forecasting, Newsvendor model, Seasonality analysis</li>
-            </ul>
+    <section id="activities" class="activities">
+        <h2>Professional Activities</h2>
+        <ul>
+            <li>Vice President and MS Representative, Equity, Diversity and Inclusion Coalition</li>
+            <li>Volunteer, Development Partners Conclave - Rebuild Kerala (2021)</li>
+            <li>Organizing Committee Member, Nishagandhi Monsoon Ragas (2020)</li>
+        </ul>
+    </section>
 
-            <h3>Professional Experience</h3>
-            <p>As a data analyst at <strong>InterGlobe Aviation Ltd. (Indigo Airlines)</strong>, I led analysis of internal operations, used forecasting techniques to predict delays and inefficiencies, and implemented solutions that improved service quality by 25%. I also created interactive dashboards in SQL, streamlining decision-making and aligning teams on common goals.</p>
-            <p>At <strong>KREATIO Software Pvt Ltd</strong>, I contributed to business development, enhancing reporting processes and supporting strategic decision-making through data analysis. I worked closely with the product and sales teams to identify market opportunities and drive revenue growth.</p>
-
-            <h3>Education</h3>
-            <<!-- Education Cards -->
-        <div class="education-card">
-            <h3>Master of Science in Business Analytics</h3>
-            <p><strong>Simon Business School, University of Rochester</strong></p>
-            <p>Expected Graduation: December 2025</p>
-            <p>Relevant Coursework: Advanced Business Analytics, Process Improvement, Business Strategy, Core Statistics, Supply Chain</p>
-            <p>Rochester, New York</p>
-        </div>
-
-        <div class="education-card">
-            <h3>Bachelor of Business Administration</h3>
-            <p><strong>University of Kerala</strong></p>
-            <p>Graduation Date: March 2021</p>
-            <p>Location: Trivandrum, India</p>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects">
-    <div class="projects-container">
-        <h2>My Projects</h2>
-
-        <!-- Project 1 -->
-        <div class="project-card">
-            <h3>Employee Data Analysis (Nexus Logistics Solutions)</h3>
-            <p><strong>Technologies Used:</strong> PCA, K-means Clustering, Python (Pandas, Scikit-learn)</p>
-            <p><strong>Description:</strong> Analyzed 5000+ employee data to segment motivations, preferences, and performance trends. Provided actionable insights to optimize training programs and boost engagement.</p>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-            <h3>Product Development & Strategy Realignment (Tribola Tech)</h3>
-            <p><strong>Technologies Used:</strong> Market Gap Analysis, Data Visualization, Python (Pandas)</p>
-            <p><strong>Description:</strong> Identified and analyzed market gaps, supporting product team decision-making and ensuring alignment with business objectives. Simplified project deliverables to drive revenue growth.</p>
-        </div>
-    </div>
-</section>
-
-
-<!-- Activities Section -->
-<section id="activities">
-    <div class="activities-container">
-        <h2>My Activities</h2>
-
-        <!-- Activity 1 -->
-        <div class="activity-card">
-            <h3>Vice President and MS Representative</h3>
-            <p><strong>Equity, Diversity and Inclusion Coalition</strong></p>
-            <p>Serving as Vice President and MS Representative, I contribute to promoting diversity and inclusivity within the community.</p>
-        </div>
-
-        <!-- Activity 2 -->
-        <div class="activity-card">
-            <h3>Volunteer, Development Partners Conclave</h3>
-            <p><strong>Rebuild Kerala (2021)</strong></p>
-            <p>Initiated and led the program, fostering collaborations with international firms. Managed guest services and featured distinguished speakers.</p>
-        </div>
-
-        <!-- Activity 3 -->
-        <div class="activity-card">
-            <h3>Organizing Committee Member</h3>
-            <p><strong>Nishagandhi Monsoon Ragas (2020)</strong></p>
-            <p>Led coordination of a prominent state-wide festival, achieving a record attendance of 10,000 participants and coordinated performances by 20+ artists.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Additional Information Section -->
-<section id="additional-info">
-    <div class="additional-info-container">
+    <section id="credentials" class="credentials">
         <h2>Extra Credentials & Learning</h2>
-        
-        <!-- Certification 1 -->
-        <div class="info-card">
-            <h3>Google Data Analytics</h3>
-            <p><strong>Coursera (2023)</strong></p>
-            <p>Completed the Google Data Analytics certification, gaining insights into data analysis techniques and tools.</p>
-        </div>
+        <ul>
+            <li>Google Data Analytics, Coursera (2023)</li>
+            <li>Business Analytics for Decision Making, University of Colorado Boulder (2023)</li>
+            <li>English for Business & Entrepreneurship, University of Pennsylvania (2020)</li>
+            <li>Professional Skills for International Business, University of London (2021)</li>
+        </ul>
+    </section>
 
-        <!-- Certification 2 -->
-        <div class="info-card">
-            <h3>Business Analytics for Decision Making</h3>
-            <p><strong>University of Colorado Boulder (2023)</strong></p>
-            <p>Completed a course focused on data-driven decision-making strategies for business analytics.</p>
-        </div>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out!</p>
+        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+    </section>
 
-        <!-- Certification 3 -->
-        <div class="info-card">
-            <h3>English for Business & Entrepreneurship</h3>
-            <p><strong>University of Pennsylvania (2020)</strong></p>
-            <p>Studied business communication, entrepreneurship, and professional English to enhance my business skills.</p>
-        </div>
-
-        <!-- Certification 4 -->
-        <div class="info-card">
-            <h3>Professional Skills for International Business</h3>
-            <p><strong>University of London (2021)</strong></p>
-            <p>Completed a course designed to equip professionals with the skills necessary for successful international business engagements.</p>
-        </div>
-    </div>
-</section>
-
-
-<!-- Contact Section -->
-<section id="contact" class="section">
-    <h1>Contact Me</h1>
-    <p>Feel free to reach out!</p>
-    <!-- Add your Contact content here -->
-</section>
-<!-- Your other HTML content here -->
-
-<!-- Add the JavaScript at the bottom -->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll('.section');
-
-    function handleScroll() {
-        sections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-                section.classList.add('visible');
-            } else {
-                section.classList.remove('visible');
-            }
-        });
-    }
-
-    handleScroll();
-    window.addEventListener('scroll', handleScroll);
-});
-</script>
-
+    <footer>
+        <p>&copy; 2025 Prahlad Narayan Bhardwaj. All rights reserved.</p>
+    </footer>
 </body>
-
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-</script>
-
+</html>
