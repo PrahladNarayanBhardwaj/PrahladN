@@ -416,50 +416,53 @@ footer {
 }
 <p><a href="your-project-link" target="_blank">View Project</a></p>
 
-/* Activities Section Styles */
-#activities {
-    background-color: #f4f4f4; /* Light grey background */
+/* Additional Information Section Styles */
+#additional-info {
+    background-color: #fafafa; /* Light background */
     padding: 60px 20px;
-    text-align: center;
+    text-align: center; /* Center the text */
     animation: fadeInUp 1s ease-out; /* Animation */
 }
 
-/* Activities Container */
-.activities-container {
+/* Additional Info Container */
+.additional-info-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the container */
 }
 
-/* Activities Heading */
-#activities h2 {
+/* Additional Info Heading */
+#additional-info h2 {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center; /* Ensure heading is centered */
 }
 
-/* Activity Card Styles */
-.activity-card {
+/* Info Card Styles */
+.info-card {
     background-color: #fff;
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    text-align: center; /* Center the content inside each info card */
 }
 
-.activity-card:hover {
-    transform: translateY(-10px); /* Subtle hover effect */
+.info-card:hover {
+    transform: translateY(-10px); /* Hover effect */
 }
 
-/* Activity Title */
-.activity-card h3 {
+/* Info Card Title */
+.info-card h3 {
     font-size: 1.8rem;
     color: #0073e6;
     margin-bottom: 15px;
 }
 
-/* Activity Description */
-.activity-card p {
+/* Info Card Description */
+.info-card p {
     font-size: 1.1rem;
     color: #555;
     line-height: 1.6;
@@ -479,14 +482,15 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .activities-container {
+    .additional-info-container {
         padding: 0 15px;
     }
 
-    .activity-card {
+    .info-card {
         margin-bottom: 20px;
     }
 }
+
 /* Additional Information Section Styles */
 #additional-info {
     background-color: #fafafa; /* Light background */
