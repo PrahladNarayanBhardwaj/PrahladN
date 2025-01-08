@@ -281,8 +281,12 @@ footer {
     color: black;
     text-align: center;
     padding: 20px;
-    position: relative; /* Change from fixed to relative */
+    height: auto; /* Let the height adjust dynamically */
     width: 100%;
+}
+
+#contact {
+    margin-bottom: 80px; /* Add a margin to prevent overlap */
 }
 
 /* Responsive Design */
