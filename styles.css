@@ -275,7 +275,16 @@ h2 {
     color: #555;
     line-height: 1.6;
 }
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
 
+main {
+    flex: 1; /* This allows the content to push the footer down */
+}
 footer {
     background-color: #d3d3d3;
     color: black;
