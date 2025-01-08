@@ -292,6 +292,25 @@ footer {
     padding: 20px;
     width: 100%;
 }
+#contact .contact-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 
 /* Responsive Design */
 
