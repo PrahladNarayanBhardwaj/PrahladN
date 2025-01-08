@@ -487,3 +487,75 @@ footer {
         margin-bottom: 20px;
     }
 }
+/* Additional Information Section Styles */
+#additional-info {
+    background-color: #fafafa; /* Light background */
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Animation */
+}
+
+/* Additional Info Container */
+.additional-info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Additional Info Heading */
+#additional-info h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Info Card Styles */
+.info-card {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+/* Info Card Title */
+.info-card h3 {
+    font-size: 1.8rem;
+    color: #0073e6;
+    margin-bottom: 15px;
+}
+
+/* Info Card Description */
+.info-card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .additional-info-container {
+        padding: 0 15px;
+    }
+
+    .info-card {
+        margin-bottom: 20px;
+    }
+}
